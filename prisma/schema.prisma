@@ -9,7 +9,8 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
+  provider  = "postgresql"
+  directUrl = env("DIRECT_URL")
 }
 
 model Reservation {
