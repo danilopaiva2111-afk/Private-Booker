@@ -1,8 +1,8 @@
 ## Lounge Private Itaú — Sistema de Reservas
 
-Aplicação Next.js (App Router) + Prisma/SQLite para gerenciar as reservas do
-Lounge Private do Itaú, com controle de capacidade simultânea, agenda
-horizontal e dashboard com heatmap de ocupação.
+Aplicação Next.js (App Router) + Prisma/Postgres (Supabase) para gerenciar as
+reservas do Lounge Private do Itaú, com controle de capacidade simultânea,
+agenda horizontal e dashboard com heatmap de ocupação.
 
 ### Regras de capacidade
 
@@ -28,20 +28,46 @@ horizontal e dashboard com heatmap de ocupação.
 ### Stack
 
 - Next.js 16 (App Router) + TypeScript + Tailwind CSS
-- Prisma 7 + SQLite (via `@prisma/adapter-better-sqlite3`)
+- Prisma 7 + Postgres/Supabase (via `@prisma/adapter-pg`)
 - Zod para validação de entrada
+
+### Variáveis de ambiente
+
+Copie `.env.example` para `.env` e preencha com as connection strings do seu
+projeto Supabase (**Project Settings → Database → Connection string**):
+
+- `DATABASE_URL` — conexão via pooler (porta 6543, `?pgbouncer=true`), usada
+  pela aplicação em runtime.
+- `DIRECT_URL` — conexão direta (porta 5432), usada apenas pelo Prisma CLI
+  para rodar migrations.
 
 ### Rodando localmente
 
 ```bash
 npm install
-cp .env.example .env      # define DATABASE_URL="file:./dev.db"
-npx prisma migrate deploy # cria o banco SQLite local
+cp .env.example .env
+npx prisma migrate dev --name init   # cria as tabelas no Supabase
 npm run dev
 ```
 
 Acesse `http://localhost:3000` para a agenda e `http://localhost:3000/dashboard`
 para o dashboard.
+
+### Deploy no Netlify
+
+O repositório já inclui `netlify.toml` com o plugin `@netlify/plugin-nextjs`
+(instalado como devDependency), que trata as rotas de API como funções
+serverless.
+
+1. No Netlify, **Add new site → Import an existing project** e aponte para
+   este repositório/branch.
+2. Build command e publish directory já vêm do `netlify.toml`
+   (`npm run build` / `.next`) — não precisa alterar.
+3. Em **Site settings → Environment variables**, adicione `DATABASE_URL` e
+   `DIRECT_URL` com os valores do Supabase (os mesmos do `.env`).
+4. Rode `npx prisma migrate deploy` (localmente ou num passo de build) para
+   garantir que as tabelas existem no banco de produção antes do primeiro
+   deploy.
 
 ### Estrutura relevante
 
