@@ -46,7 +46,7 @@ projeto Supabase (**Project Settings → Database → Connection string**):
 ```bash
 npm install
 cp .env.example .env
-npx prisma migrate dev --name init   # cria as tabelas no Supabase
+npx prisma migrate deploy   # aplica as migrations versionadas no Supabase
 npm run dev
 ```
 
@@ -57,17 +57,17 @@ para o dashboard.
 
 O repositório já inclui `netlify.toml` com o plugin `@netlify/plugin-nextjs`
 (instalado como devDependency), que trata as rotas de API como funções
-serverless.
+serverless. O build command já roda `npx prisma migrate deploy` antes do
+`next build`, então as migrations são aplicadas automaticamente a cada deploy.
 
 1. No Netlify, **Add new site → Import an existing project** e aponte para
    este repositório/branch.
-2. Build command e publish directory já vêm do `netlify.toml`
-   (`npm run build` / `.next`) — não precisa alterar.
+2. Build command e publish directory já vêm do `netlify.toml` — não precisa
+   alterar.
 3. Em **Site settings → Environment variables**, adicione `DATABASE_URL` e
    `DIRECT_URL` com os valores do Supabase (os mesmos do `.env`).
-4. Rode `npx prisma migrate deploy` (localmente ou num passo de build) para
-   garantir que as tabelas existem no banco de produção antes do primeiro
-   deploy.
+4. Dispare o deploy — o próprio build do Netlify roda a migration contra o
+   `DIRECT_URL` antes de compilar o app.
 
 ### Estrutura relevante
 
