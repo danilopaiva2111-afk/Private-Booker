@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="g15" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#14160F"/>
+      <stop offset="100%" stop-color="#0A0B08"/>
+    </linearGradient>
+    <pattern id="grid15" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="rgba(255,255,255,0.035)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="900" fill="url(#g15)"/>
+  <rect width="1200" height="900" fill="url(#grid15)"/>
+  
+    <path d="M0,252.00000000000003 Q600,45 1200,252.00000000000003" stroke="rgba(255,255,255,0.08)" stroke-width="2" fill="none"/>
+    <path d="M0,666 Q600,873 1200,666" stroke="rgba(255,255,255,0.08)" stroke-width="2" fill="none"/>
+  
+  
+    <g opacity="0.35">
+      <circle cx="983.9999999999999" cy="216" r="126.00000000000001" fill="none" stroke="#CFF33B" stroke-width="7.5600000000000005"/>
+      <path d="M 857.9999999999999 216 A 113.40000000000002 126.00000000000001 0 0 1 983.9999999999999 89.99999999999999" stroke="#CFF33B" stroke-width="7.5600000000000005" fill="none"/>
+      <path d="M 1110 216 A 113.40000000000002 126.00000000000001 0 0 1 983.9999999999999 342" stroke="#CFF33B" stroke-width="7.5600000000000005" fill="none"/>
+    </g>
+  
+  <rect x="0" y="0" width="1200" height="900" fill="none" stroke="rgba(207,243,59,0.18)" stroke-width="2"/>
+  <text x="600" y="444" font-family="Arial, sans-serif" font-size="38.4" fill="#CFF33B" fill-opacity="0.85" text-anchor="middle" font-weight="700" letter-spacing="2">FOTO — QUADRA 2</text>
+  <text x="600" y="474" font-family="Arial, sans-serif" font-size="21.599999999999998" fill="#ffffff" fill-opacity="0.45" text-anchor="middle" letter-spacing="1">Estrutura da academia</text>
+</svg>

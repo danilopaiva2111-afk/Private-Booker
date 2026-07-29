@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="g0" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#14160F"/>
+      <stop offset="100%" stop-color="#0A0B08"/>
+    </linearGradient>
+    <pattern id="grid0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="rgba(255,255,255,0.035)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#g0)"/>
+  <rect width="1920" height="1080" fill="url(#grid0)"/>
+  
+    <path d="M0,302.40000000000003 Q960,54 1920,302.40000000000003" stroke="rgba(255,255,255,0.08)" stroke-width="2" fill="none"/>
+    <path d="M0,799.2 Q960,1047.6 1920,799.2" stroke="rgba(255,255,255,0.08)" stroke-width="2" fill="none"/>
+  
+  
+    <g opacity="0.35">
+      <circle cx="1574.3999999999999" cy="259.2" r="151.20000000000002" fill="none" stroke="#CFF33B" stroke-width="9.072000000000001"/>
+      <path d="M 1423.1999999999998 259.2 A 136.08 151.20000000000002 0 0 1 1574.3999999999999 107.99999999999997" stroke="#CFF33B" stroke-width="9.072000000000001" fill="none"/>
+      <path d="M 1725.6 259.2 A 136.08 151.20000000000002 0 0 1 1574.3999999999999 410.4" stroke="#CFF33B" stroke-width="9.072000000000001" fill="none"/>
+    </g>
+  
+  <rect x="0" y="0" width="1920" height="1080" fill="none" stroke="rgba(207,243,59,0.18)" stroke-width="2"/>
+  <text x="1880" y="1030" font-family="Arial, sans-serif" font-size="22" fill="#CFF33B" fill-opacity="0.6" text-anchor="end" font-weight="700" letter-spacing="1.5">FOTO — QUADRA PRINCIPAL</text>
+  <text x="1880" y="1054" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" fill-opacity="0.35" text-anchor="end" letter-spacing="0.5">Substituir por imagem cinematográfica da academia</text>
+</svg>

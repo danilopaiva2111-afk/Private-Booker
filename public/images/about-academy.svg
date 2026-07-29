@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1400" viewBox="0 0 1200 1400">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#14160F"/>
+      <stop offset="100%" stop-color="#0A0B08"/>
+    </linearGradient>
+    <pattern id="grid1" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="rgba(255,255,255,0.035)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="1400" fill="url(#g1)"/>
+  <rect width="1200" height="1400" fill="url(#grid1)"/>
+  
+    <path d="M0,392.00000000000006 Q600,70 1200,392.00000000000006" stroke="rgba(255,255,255,0.08)" stroke-width="2" fill="none"/>
+    <path d="M0,1036 Q600,1358 1200,1036" stroke="rgba(255,255,255,0.08)" stroke-width="2" fill="none"/>
+  
+  
+    <g opacity="0.35">
+      <circle cx="983.9999999999999" cy="336" r="168.00000000000003" fill="none" stroke="#CFF33B" stroke-width="10.080000000000002"/>
+      <path d="M 815.9999999999999 336 A 151.20000000000002 168.00000000000003 0 0 1 983.9999999999999 167.99999999999997" stroke="#CFF33B" stroke-width="10.080000000000002" fill="none"/>
+      <path d="M 1152 336 A 151.20000000000002 168.00000000000003 0 0 1 983.9999999999999 504" stroke="#CFF33B" stroke-width="10.080000000000002" fill="none"/>
+    </g>
+  
+  <rect x="0" y="0" width="1200" height="1400" fill="none" stroke="rgba(207,243,59,0.18)" stroke-width="2"/>
+  <text x="600" y="694" font-family="Arial, sans-serif" font-size="38.4" fill="#CFF33B" fill-opacity="0.85" text-anchor="middle" font-weight="700" letter-spacing="2">FOTO — FACHADA / ACADEMIA</text>
+  <text x="600" y="724" font-family="Arial, sans-serif" font-size="21.599999999999998" fill="#ffffff" fill-opacity="0.45" text-anchor="middle" letter-spacing="1">Substituir pela foto real da Pro One</text>
+</svg>
