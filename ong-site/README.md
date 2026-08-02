@@ -52,13 +52,22 @@ tracejado (passe o mouse para ver a instrução de substituição).
   Construção, O Boticário)
 - Enquadramento "Pessoa Física" / "Pessoa Jurídica" para as formas de
   contribuição, como no site atual
+- Fundação (27/07/2005), história de origem (Claudia da Costa Mota,
+  Haras da Orla) e visão ("ser referência nacional...") — seção "Nossa
+  história", dentro de "Instituto"
+- Diretoria estatutária (Claudia da Costa Mota, Vera Brick, Marcos
+  Lucena de Souza, Afonso Bruno Filho, Márcia Regina Gama) — seção
+  "Quem lidera o Instituto"
+- Reconhecimentos oficiais: Utilidade Pública Municipal (Lei nº
+  4272/2010), participação no CMDCA/CONDEFI/CMAS de Itatiba, menções da
+  Câmara Municipal de Louveira/Itatiba e da Revista Resource Alliance &
+  Filantropia — seção "Reconhecimento"
 
 **Ainda é placeholder** — checklist do que falta trocar:
 
 - [ ] CNPJ e razão social (rodapé e hero) — não capturado nas imagens
 - [ ] E-mail oficial e link de WhatsApp (`.float-cta` e rodapé)
 - [ ] Links reais de Instagram/Facebook
-- [ ] Ano de fundação (seção "Nossa missão")
 - [ ] Números de impacto (anos de atuação, crianças atendidas/ano,
       sessões realizadas, cavalos na equipe) — seção "ledger" logo
       abaixo do hero
@@ -74,9 +83,12 @@ tracejado (passe o mouse para ver a instrução de substituição).
 - [ ] Confirmar com contador/jurídico a resposta sobre dedutibilidade
       fiscal de doações e benefícios fiscais para empresas antes de
       publicar essa informação
-- [ ] Fotos reais da instituição (hoje o visual usa apenas formas/ícones
-      SVG e um efeito de partículas em canvas — o site original tem
-      fotos reais de sessões de equoterapia que valeria reaproveitar)
+- [ ] Fotos reais da instituição e da diretoria (hoje o visual usa
+      apenas formas/ícones SVG e um efeito de partículas em canvas — o
+      site original tem fotos reais de sessões de equoterapia e da
+      equipe que valeria reaproveitar; não usamos as fotos de rosto da
+      diretoria vistas nos prints por não termos os arquivos originais
+      nem autorização explícita de uso)
 - [ ] Conectar o formulário de newsletter a um serviço real (ex.:
       Mailchimp, Brevo, ou backend próprio) — hoje ele só mostra uma
       mensagem de confirmação, sem enviar nada
