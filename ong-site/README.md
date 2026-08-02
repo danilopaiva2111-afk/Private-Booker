@@ -62,6 +62,10 @@ tracejado (passe o mouse para ver a instrução de substituição).
   4272/2010), participação no CMDCA/CONDEFI/CMAS de Itatiba, menções da
   Câmara Municipal de Louveira/Itatiba e da Revista Resource Alliance &
   Filantropia — seção "Reconhecimento"
+- Depoimento real de um aluno (Gustavo) do curso "XIV Gestão para
+  Centros de Equoterapia", da Escola de Equo&Terapias do Instituto
+  (subdomínio `eos.passoapasso.org.br`) — citado como prova social da
+  "formação" mencionada na visão, logo abaixo de "Nossa visão"
 
 **Ainda é placeholder** — checklist do que falta trocar:
 
