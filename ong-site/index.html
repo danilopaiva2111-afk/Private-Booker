@@ -245,10 +245,6 @@
     background:var(--card-bg); border:1px solid var(--line); border-top:3px double var(--leather);
     padding:var(--space-4); border-radius:var(--radius);
   }
-  .value-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:var(--space-3); margin-top:var(--space-4); }
-  @media (max-width:700px){ .value-grid{ grid-template-columns:1fr; } }
-  .value-card{ border-top:3px double var(--leather); padding-top:var(--space-2); }
-  .value-card svg{ width:1.6rem; height:1.6rem; color:var(--amber-ink); margin-bottom:.5rem; }
 
   /* ---------- Stats / ledger ---------- */
   .ledger{
@@ -280,6 +276,7 @@
 
   /* ---------- Donation cards ---------- */
   .give-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:var(--space-3); margin-top:var(--space-4); align-items:stretch; }
+  .give-grid.give-grid-2{ grid-template-columns:repeat(2,1fr); }
   @media (max-width:980px){ .give-grid{ grid-template-columns:1fr; } }
   .give-card{
     background:var(--card-bg); border:1px solid var(--line); border-top:3px double var(--leather);
@@ -445,8 +442,8 @@
         </div>
         <p class="hero-trust">
           <span class="ph" title="Substituir pelo número oficial de registro">CNPJ 00.000.000/0001-00</span> ·
-          Organização sem fins lucrativos ·
-          <span class="ph" title="Substituir pela cidade/estado reais">Cidade/UF</span>
+          Itatiba/SP ·
+          Filiado à ANDE‑Brasil
         </p>
       </div>
     </div>
@@ -483,31 +480,39 @@
       <div>
         <p class="eyebrow">O método</p>
         <h2 id="equo-title">O que é a equoterapia?</h2>
-        <p>A equoterapia é um método terapêutico e educacional que utiliza o cavalo dentro de uma abordagem interdisciplinar, unindo saúde, educação e equitação. O movimento tridimensional do andar do cavalo se assemelha ao movimento da bacia humana durante a marcha, estimulando ganhos motores, cognitivos, emocionais e sociais em quem participa das sessões.</p>
-        <p>Cada sessão é conduzida por uma equipe multidisciplinar — equitador, profissionais de saúde e educação — respeitando o ritmo e a história de cada criança.</p>
+        <p style="font-style:italic">"A equoterapia é um método terapêutico que tem o cavalo como facilitador da evolução humana, independente da sua condição, por meio de intervenções de um mediador preparado para compor esta relação. O cavalo é um agente facilitador de ganhos motores, emocionais, intelectuais e espirituais." <span style="white-space:nowrap">— Claudia Mota, 2014</span></p>
+        <p>A inserção do cavalo em processos terapêuticos remonta a 458–370 a.C., quando Hipócrates já se referia à equitação como fator regenerador da saúde. Em 1967 foi fundado o primeiro centro de equitação para pessoas com deficiência nos Estados Unidos; no Brasil, o método foi trazido pela Associação Nacional de Equoterapia (ANDE‑Brasil) em 1989 — associação à qual o Instituto Passo a Passo é filiado.</p>
+        <p>O método é reconhecido pelo Conselho Federal de Medicina (CFM, 1997) e pelo Conselho Federal de Fisioterapia e Terapia Ocupacional (COFFITO, 2008).</p>
         <ul class="benefit-list">
           <li>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-            Equilíbrio, força e coordenação motora
+            Amplitude de movimento, força muscular e postura
           </li>
           <li>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-            Autoestima, confiança e superação do medo
+            Equilíbrio e ajustes tônicos
           </li>
           <li>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-            Vínculo afetivo e regulação emocional
+            Atenção, memória, coordenação e noção espacial
           </li>
           <li>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-            Estímulo cognitivo, sensorial e de linguagem
+            Autoconfiança e elaboração de medos e conflitos
           </li>
         </ul>
       </div>
       <aside class="side-card">
-        <h3>Quem é atendido</h3>
-        <p>Crianças e jovens com dificuldades de aprendizagem, condições do desenvolvimento e deficiências físicas, intelectuais ou sensoriais, encaminhados junto às famílias e, quando aplicável, à rede de saúde e educação.</p>
-        <p style="margin-bottom:0"><span class="ph" title="Substituir pela política real de encaminhamento/critérios de atendimento">[Descrever aqui os critérios de encaminhamento e eventual fila de espera]</span></p>
+        <h3>Quem atendemos</h3>
+        <p>Crianças e adolescentes entre 2 e 21 anos que desejam melhorar seu processo de aprendizagem global e sua autonomia.</p>
+        <h3 style="margin-top:var(--space-3)">Nossos programas</h3>
+        <ul class="aside-list" style="margin-top:0">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Hipoterapia</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Educação e reeducação</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Pré‑esportivo</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Esporte educacional equestre</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>PAEDA — atendimento equoterápico nos distúrbios de aprendizagem</li>
+        </ul>
       </aside>
     </div>
   </section>
@@ -523,24 +528,15 @@
       <div>
         <p class="eyebrow">Quem somos</p>
         <h2 id="instituto-title">Nossa missão</h2>
-        <p>O Instituto Passo a Passo nasceu do compromisso de oferecer equoterapia e ações de responsabilidade social a crianças e famílias que, de outra forma, não teriam acesso a esse cuidado — <span class="ph" title="Substituir pelo ano real de fundação">desde [ano de fundação]</span>.</p>
-        <p>Acreditamos que desenvolvimento se constrói em pequenos avanços constantes: um músculo que responde, uma palavra nova, um sorriso de confiança. É isso que buscamos, sessão após sessão.</p>
-        <div class="value-grid">
-          <div class="value-card">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-4.35-9.5-9C.5 8 2 4 6 4c2.4 0 3.8 1.4 6 4 2.2-2.6 3.6-4 6-4 4 0 5.5 4 3.5 8-2.5 4.65-9.5 9-9.5 9z"/></svg>
-            <h3 style="font-size:1rem">Cuidado</h3>
-            <p style="font-size:.92rem">Atenção individual a cada criança e família.</p>
-          </div>
-          <div class="value-card">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.5-6 8-6s8 2 8 6"/></svg>
-            <h3 style="font-size:1rem">Inclusão</h3>
-            <p style="font-size:.92rem">Acesso sem depender da renda da família.</p>
-          </div>
-          <div class="value-card">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg>
-            <h3 style="font-size:1rem">Transparência</h3>
-            <p style="font-size:.92rem">Prestação de contas aberta a doadores.</p>
-          </div>
+        <p>Somos uma comunidade que trabalha em prol de servir àqueles que necessitam de nós, com um único propósito: contribuir com a evolução humana por meio dos movimentos do cavalo e da natureza. Somos seres de busca — e por isso buscamos nossa melhoria contínua, um passo de cada vez.</p>
+        <p style="font-size:.85rem"><span class="ph" title="Substituir pelo ano real de fundação">Desde [ano de fundação]</span>, atuando em Itatiba/SP.</p>
+        <h3 style="margin-top:var(--space-3);font-size:1rem;font-family:var(--font-mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ink-soft)">Nossos valores</h3>
+        <div style="display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.6rem">
+          <span class="tag" style="background:var(--sage-soft);color:var(--sage);font-family:var(--font-mono);font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;padding:.35rem .7rem;border-radius:2px;font-weight:700">Capricho</span>
+          <span class="tag" style="background:var(--sage-soft);color:var(--sage);font-family:var(--font-mono);font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;padding:.35rem .7rem;border-radius:2px;font-weight:700">Comunicação</span>
+          <span class="tag" style="background:var(--sage-soft);color:var(--sage);font-family:var(--font-mono);font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;padding:.35rem .7rem;border-radius:2px;font-weight:700">Empatia</span>
+          <span class="tag" style="background:var(--sage-soft);color:var(--sage);font-family:var(--font-mono);font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;padding:.35rem .7rem;border-radius:2px;font-weight:700">Lealdade</span>
+          <span class="tag" style="background:var(--sage-soft);color:var(--sage);font-family:var(--font-mono);font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;padding:.35rem .7rem;border-radius:2px;font-weight:700">Renovação</span>
         </div>
       </div>
     </div>
@@ -570,7 +566,8 @@
         </div>
       </div>
 
-      <div class="give-grid" id="ajudar-doacao">
+      <p class="eyebrow" style="margin-top:var(--space-4)">Pessoa física</p>
+      <div class="give-grid give-grid-2" id="ajudar-doacao" style="margin-top:var(--space-2)">
         <div class="give-card">
           <span class="tag">Doação única</span>
           <h3>Uma contribuição pontual</h3>
@@ -601,24 +598,49 @@
           <p style="font-size:.85rem">Cancele quando quiser, sem burocracia.</p>
           <a class="btn btn-primary" href="#" title="Substituir pelo link real de assinatura recorrente">Quero apadrinhar</a>
         </div>
+      </div>
 
-        <div class="give-card" id="patrocinio">
-          <span class="tag">Empresas</span>
-          <h3>Patrocínio corporativo</h3>
-          <p style="font-size:.92rem">Sua empresa pode sustentar um projeto inteiro e fortalecer sua marca associada a uma causa real.</p>
+      <p class="eyebrow" style="margin-top:var(--space-4)">Pessoa jurídica</p>
+      <div class="give-grid give-grid-2" style="margin-top:var(--space-2)" id="patrocinio">
+        <div class="give-card">
+          <span class="tag">Trote</span>
+          <h3>Patrocínio Trote</h3>
+          <p style="font-size:.92rem">Nível de entrada para empresas que querem apoiar a causa e ganhar visibilidade associada a ela.</p>
           <ul class="aside-list">
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Marca exibida no site e materiais</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Certificado de parceria</li>
+          </ul>
+          <a class="btn btn-outline" href="#contato">Falar com nosso time</a>
+        </div>
+        <div class="give-card featured">
+          <span class="tag">Galope</span>
+          <h3>Patrocínio Galope</h3>
+          <p style="font-size:.92rem">Nível principal de parceria — sua empresa sustenta um projeto inteiro e fortalece sua marca associada a uma causa real.</p>
+          <ul class="aside-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Destaque no site e materiais</li>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Relatório de impacto para ESG</li>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Ação de voluntariado com colaboradores</li>
           </ul>
-          <p style="font-size:.8rem">Benefícios fiscais podem variar de acordo com o enquadramento jurídico do Instituto — consulte seu contador.</p>
-          <a class="btn btn-outline" href="#contato">Falar com nosso time</a>
+          <a class="btn btn-primary" href="#contato">Falar com nosso time</a>
         </div>
       </div>
+      <p style="font-size:.8rem;margin-top:var(--space-2)">Benefícios fiscais podem variar de acordo com o enquadramento jurídico do Instituto — consulte seu contador.</p>
 
-      <div class="side-card" style="margin-top:var(--space-4)">
-        <h3>Não pode doar em dinheiro agora?</h3>
-        <p style="margin-bottom:0">Você também pode doar materiais (ração, itens de manejo e materiais pedagógicos — <span class="ph" title="substituir pela lista real de necessidades">ver lista atualizada [placeholder]</span>), oferecer horas de voluntariado ou simplesmente compartilhar esta página com sua rede.</p>
+      <div class="two-col" style="margin-top:var(--space-4);gap:var(--space-3)">
+        <div class="side-card">
+          <h3>Seja voluntário</h3>
+          <p style="font-style:italic;font-size:.92rem">"Carta de valores do voluntariado: amor, aprendizado, comprometimento, perseverança e respeito."</p>
+          <p style="font-size:.92rem">O voluntário é um agente de transformação que doa tempo, trabalho e talento de forma espontânea. O Instituto oferece três formas de atuação:</p>
+          <ul class="aside-list" style="margin-top:.4rem">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Permanente</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Eventual</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>A distância</li>
+          </ul>
+        </div>
+        <div class="side-card">
+          <h3>Não pode doar em dinheiro agora?</h3>
+          <p style="margin-bottom:0">Compartilhar esta página com sua rede também ajuda a levar essa causa mais longe — e não custa nada.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -629,15 +651,20 @@
       <div class="section-head">
         <p class="eyebrow">Parceiros</p>
         <h2 id="sponsors-title">Empresas parceiras</h2>
-        <p>Marcas que já caminham ao nosso lado.</p>
+        <p>Marcas que já caminham ao nosso lado, em dois níveis de parceria — do trote ao galope.</p>
       </div>
+      <h3 style="font-size:.95rem;font-family:var(--font-mono);text-transform:uppercase;letter-spacing:.06em;color:var(--amber-ink)">Galope</h3>
       <div class="sponsor-grid">
-        <div class="sponsor-slot">Sua marca aqui</div>
-        <div class="sponsor-slot">Sua marca aqui</div>
-        <div class="sponsor-slot">Sua marca aqui</div>
-        <div class="sponsor-slot">Sua marca aqui</div>
-        <div class="sponsor-slot cta">Quero aparecer aqui →</div>
+        <div class="sponsor-slot">AZ Armaturen</div>
+        <div class="sponsor-slot cta">Quero ser parceiro Galope →</div>
       </div>
+      <h3 style="font-size:.95rem;font-family:var(--font-mono);text-transform:uppercase;letter-spacing:.06em;color:var(--amber-ink);margin-top:var(--space-4)">Trote</h3>
+      <div class="sponsor-grid">
+        <div class="sponsor-slot">L. Corrêa Materiais para Construção</div>
+        <div class="sponsor-slot">O Boticário</div>
+        <div class="sponsor-slot cta">Quero ser parceiro Trote →</div>
+      </div>
+      <p style="margin-top:var(--space-3);font-size:.82rem" class="ph" title="Substituir pelos logos reais em imagem e conferir lista atualizada de parceiros">Nomes confirmados na versão atual do site — substituir por logos oficiais e confirmar lista vigente de parceiros antes de publicar.</p>
     </div>
   </section>
 
@@ -710,7 +737,7 @@
             Minha empresa pode se tornar parceira?
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
-          <div class="faq-a"><p>Sim — veja a seção "Patrocínio corporativo" acima ou fale diretamente com nosso time pelo formulário de contato.</p></div>
+          <div class="faq-a"><p>Sim — temos dois níveis de parceria, Trote e Galope. Veja a seção "Patrocínio corporativo" acima ou fale diretamente com nosso time pelo formulário de contato.</p></div>
         </div>
       </div>
     </div>
@@ -751,9 +778,10 @@
       <div>
         <h3>Contato</h3>
         <ul>
-          <li><span class="ph" title="Substituir pelo endereço real">Rua Placeholder, 000 — Cidade/UF</span></li>
-          <li><span class="ph" title="Substituir pelo telefone real">(00) 00000-0000</span></li>
+          <li>R. Professor Lindopho Cabral Leal, 133 — Bairro Moenda, Itatiba/SP</li>
+          <li>(11) 4487-2825</li>
           <li><span class="ph" title="Substituir pelo e-mail real">contato@passoapasso.org.br</span></li>
+          <li style="font-size:.82rem;color:var(--ink-soft)">Filiado à Associação Nacional de Equoterapia (ANDE‑Brasil)</li>
         </ul>
       </div>
       <div>
